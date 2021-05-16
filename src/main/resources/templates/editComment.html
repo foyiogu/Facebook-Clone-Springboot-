@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+</head>
+<body>
+<div class="col-lg-6">
+  <div  id="section-one" class="shadow p-3 mb-5 bg-body rounded">
+    <div class="row">
+      <div class="post">
+        <form action="" th:action="@{/update}" th:object="${comment}" method = "POST">
+          <div class="col-lg-11 text-right">
+            <textarea th:field="*{id}" class="form-control drag"style="display: none"></textarea>
+            <textarea th:field="*{commentBody}" class="form-control drag" placeholder="...."></textarea>
+            <button type="submit" class="btn btn-primary btn-md mt-3 btn-block">Comment</button>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
